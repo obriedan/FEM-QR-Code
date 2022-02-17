@@ -3,7 +3,7 @@
   --heading-text-color: #1f314f;
   --body-text-color: #7d889e;
   --card-img-bg-color: #2c7dfa;
-  --card-img-highlight-color: ##3685ff;
+  --card-img-highlight-color: #3685ff;
 }
 
 * {
@@ -38,6 +38,35 @@ body {
   height: 288px;
   width: 288px;
   border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr-code {
+  z-index: 20;
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: var(--card-img-highlight-color);
+  position: absolute;
+}
+
+#circle-1 {
+  width: 328px;
+  height: 328px;
+  top: -161px;
+  left: -134px;
+}
+
+#circle-2 {
+  width: 270px;
+  height: 270px;
+  top: 202px;
+  left: 136px;
 }
 
 .text-container {
